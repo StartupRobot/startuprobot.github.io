@@ -33,7 +33,30 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="sur-home.html"><img class="img-responsive" src="img/sur-logo-white.png" ></a>
+                <a class="navbar-brand page-scroll" href="index.html"><img class="img-responsive" src="img/sur-logo-white.png" ></a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a id="signup-nav" href="signup.html">Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -53,55 +76,56 @@
                 
             </div>
             <div class="row center-block">
-                <form name="insightly_web_to_lead" action="https://googleapps.insight.ly/WebToLead/Create" method="post" class="fs-form fs-form-full" autocomplete="off">
+                <form name="insightly_web_to_lead" action="https://googleapps.insight.ly/WebToLead/Create" method="post" class="fs-form fs-form-full">
                 <input type="hidden" name="formId" value="ayoXdgRJElVfaWGwaPILXA=="/>
 
                     <div class="field-wrap">
-                        <h4 class="bold">Hi StartupRobot, I am:</h4>
+                        <h4 class="intro bold">Hi StartupRobot, I am:</h4>
                         <label>Title</label><br>
                         <select id="title">
                             <option>Miss</option>
                             <option>Mrs</option>
+                            <option>Ms</option>
                             <option>Mr</option>
                         </select><br>
                     </div>
                     <div class="field-wrap">
-                        <label>First Name</label><br>
-                        <input id="insightly_FirstName" type="text" name="fname">
+                        <label for="insightly_firstName">First Name</label><br>
+                        <input id="insightly_FirstName" type="text" name="FirstName">
                     </div>
                     <div class="field-wrap">
-                        <label>Middle Name (Optional)</label><br>
-                        <input id="insightly_MiddleName" type="text" name="mname">
+                        <label for="insightly_middleName">Middle Name (Optional)</label><br>
+                        <input id="insightly_MiddleName" type="text" name="MiddleName">
                     </div>
                     <div class="field-wrap">
-                        <label>Last Name</label><br>
-                        <input id="insightly_LastName" type="text" name="lname">
+                        <label for="insightly_lastName">Last Name</label><br>
+                        <input id="insightly_LastName" type="text" name="LastName">
                     </div>
 
                     <div class="wrap">
-                        <h4 class="bold">I need:</h4>
-                        <h5 class="bold">(Select all that apply, or <a href="#">learn more</a>)</h5>
-                        <input type="checkbox" name="business-reg">Business Registration <br>
-                        <input type="checkbox" name="company-reg">Company Registration <br>
-                        <input type="checkbox" name="tcc">Tax Compliance Certificate <br>
-                        <input type="checkbox" name="nccr">National Contracts Commission Registration <br>
-                        <input type="checkbox" name="trademarking">Trademarking <br>
+                        <h4 class="intro bold">I need:</h4>
+                        <h5 class="bold">(Select all that apply, or <a href="#" data-toggle="modal" data-target="#myModal">learn more</a>)</h5>
+                        <input id="2a" type="checkbox" name="business-reg">Business Registration <br>
+                        <input id="2b" type="checkbox" name="company-reg">Company Registration <br>
+                        <input id="2c" type="checkbox" name="tcc">TCC (Tax Compliance Certificate) <br>
+                        <input id="2d" type="checkbox" name="nccr">NCC (National Contracts Commission Registration) <br>
+                        <input id="2e" type="checkbox" name="trademarking">Trademarking <br>
                         <div class="wrap">
-                            <input type="checkbox" name="business-reg">I want help with something else: <br>
-                            <textarea name="other" type="text" placeholder="Message"></textarea>
+                            <input id="2f" type="checkbox" name="business-reg">I want help with something else: <br>
+                            <textarea id="other" name="other" type="text" placeholder="Message"></textarea>
                         </div>
                     </div>
 
                     <div class="field-wrap">
-                        <h4 class="bold">You can reach me at:</h4>
-                        <label>Phone Number</label><br>
+                        <h4 class="intro bold">You can reach me at:</h4>
+                        <label for="phone">Phone Number</label><br>
                         <input id="insightly_Phone" type="text" name="phonenum">
                     </div>
                     <div class="field-wrap">
-                        <label>Email Address</label><br>
+                        <label for="email">Email Address</label><br>
                         <input id="insightly_Email" type="email" name="email">
-                        
                     </div>
+
                     <input type="hidden" id="insightly_ResponsibleUser" name="ResponsibleUser" value="962072"/><br/>
 
                     <div class="hidden">
@@ -110,11 +134,81 @@
                     </div>
 
                     <input type="hidden" id="insightly_LeadSource" name="LeadSource" value="466760"/>
-                    <input class="btn btn-default2" type="submit" value="Contact Me!">
+                    <input class="btn btn-default2" id="submit" onclick="concat()" type="submit" value="Contact Me!">
                 </form>
             </div>
         </div>
     </section>
+
+    <!-- Learn More Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 class="modal-title" id="myModalLabel">Our Services</h2>
+          </div>
+          <div class="modal-body">
+            <h3>Business Registration</h3> 
+            <h4><strong>From J$7,500</strong></h4>
+            <p>If you’re looking to start a business or formalise an existing business, business registration allows you to:</p>
+            <ul>
+                <li>Operate legally under a name other than your personal name.</li>
+                <li>Advertise legally. </li>
+                <li>Access business banking and funding.</li>
+                <li>Be exempted from the 3% withholding tax requirement. </li>
+            </ul> 
+            <p>Registering a business has different benefits from registering a company. You can convert a business into a company, but you can’t convert a company into a business. Seek legal advice to help you decide which is right for you.</p>
+
+            <h3>Company Registration</h3> 
+            <h4><strong>From J$48,000</strong></h4>
+            <p>In order to start a company, you must register it. Registering a company gives you the most of the same benefits as registering a business, but it also allows you to:</p>
+            <ul>
+                <li>Raise funds by selling company shares to investors.</li>
+                <li>Protect your personal assets from being seized to pay company debts.</li>
+            </ul>
+            <p>That being said, there are some benefits of registering a business that don’t apply to companies. You can convert a business into a company, but you can’t convert a company into a business. Seek legal advice to help you decide which is right for you.</p>
+
+            <h3>Tax Compliance Certificate (TCC)</h3> 
+            <h4><strong>From J$4,500 <br> (plus J$3,500 for each SO2 filed)</strong></h4>
+            <p>A TCC shows that your business/ company is up to date with all of its tax payments. A TCC allows you to:</p>
+            <ul>
+                <li>Apply for certain industry licences/registrations.</li>
+                <li>Apply for citizenship or work permits.</li>
+                <li>Apply for government contracts.</li>
+                <li>Apply to clear certain goods through Customs.</li>
+            </ul> 
+            <p>TCCs are valid for 3 months, or up to 6 months if your business/company is a PAYE Contributor.</p>
+
+            <h3>National Contracts Commission Registration (NCC)</h3> 
+            <h4><strong>From J$6,000</strong></h4>
+            <p>Registering with the National Contracts Commission allows your business/ company to apply for government contracts worth $500,000 or more. </p>
+            <p>To apply for an NCC, you’ll need:</p>
+            <ol>
+                <li>A TCC.</li>
+                <li>A Letter of Good Standing from the Companies Office. </li>
+                <li>A profile of your company.</li>
+                <li>Qualifications of your project team.</li>
+                <li>3 letters of recommendation.</li>
+            </ol> 
+            <p>NCCs are valid for 18 months.</p>
+
+            <h3>Trademarking</h3> 
+            <h4><strong>From J$26,000</strong></h4>
+            <p>A trademark protects a distinctive visual representation of your brand. Trademarking allows you to:</p>
+            <ul>
+                <li>Protect your brand’s reputation by preventing others from using your trademark. </li>
+                <li>Treat your trademark like an asset.</li>
+                <li>Licence the use of your trademark to others.</li>
+            </ul> 
+            <p>It can take as long as 10 months to get a trademark, so it’s better to start the process sooner rather than later.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default2" data-dismiss="modal">Back to Form</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
         <div class="footer">
@@ -160,15 +254,19 @@
     </script>
 
     <script>
-        $("input:checkbox").click(function() {
-            if ($(this).is(":checked")) {
-                var group = "input:checkbox[name='" + $(this).attr("name") + "']";
-                $(group).prop("checked", false);
-                $(this).prop("checked", true);
-            } else {
-                $(this).prop("checked", false);
-            }
-        });
+        $(document).ready(function(){
+          $('#other').keyup(function(){
+              
+              if($('#other').val().length>0)
+              {
+                  $('input#2f').prop('checked', true);
+              }
+              else
+              {
+                  $('input#2f').prop('checked', false);
+              }
+          });
+      })
     </script>
 
     <script>
