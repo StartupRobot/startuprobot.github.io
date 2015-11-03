@@ -48,7 +48,7 @@ body {
 }
 
 .intro {
-	margin-top: 20px;
+	margin: 20px 0;
 }
 
 .bold {
@@ -233,7 +233,7 @@ h3,h4 {
 
 .field-wrap label {
 	margin-top: 15px;
-	font-size: 15px;
+	font-size: 14px;
 }
 
 .field-wrap input {
@@ -298,7 +298,10 @@ h3,h4 {
 	min-height: 100%;
     padding-top: 140px;
     padding-bottom: 50px;
-    background: #fff;
+    background: url(../img/robot-tilt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /*********************************** intent.html **************************************/
@@ -345,14 +348,8 @@ h3,h4 {
 */
 
 .checkbox-inline {
-	width: 173px;
-	height: 200px;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-bottom: 20px;
-	border-radius: 3px;
-	border: 1px solid rgb(216, 217, 216);
-	background-color: rgb(216, 217, 216);
+	width: 22px;
+	height: 22px;
 } 
 
 .checkbox-inline label {
@@ -390,9 +387,14 @@ h3,h4 {
 	display: inline;
 }
 
+input[type=checkbox], input[type=radio] {
+	margin: 4px 8px 8px 0px;
+}
+
 textarea {
-	width: 50%;
+	width: 47%;
 	height: 100px;
+	margin-left: 30px;
 }
 
 #continue {

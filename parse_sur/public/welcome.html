@@ -72,70 +72,69 @@
                     <h4>Tell us who you are, what you need, and how to contact you. Our robots will follow up with you to make sure all your compliance and filing needs are met with minimum fuss.</h4>
                 </div>
             </div>
-            <div class="row">
-                
-            </div>
             <div class="row center-block">
-                <form name="insightly_web_to_lead" action="https://googleapps.insight.ly/WebToLead/Create" method="post" class="fs-form fs-form-full">
-                <input type="hidden" name="formId" value="ayoXdgRJElVfaWGwaPILXA=="/>
+                    <form name="insightly_web_to_lead" action="https://googleapps.insight.ly/WebToLead/Create" method="post" class="fs-form fs-form-full">
+                    <input type="hidden" name="formId" value="ayoXdgRJElVfaWGwaPILXA=="/>
 
-                    <div class="field-wrap">
-                        <h4 class="intro bold">Hi StartupRobot, I am:</h4>
-                        <label>Title</label><br>
-                        <select id="title">
-                            <option>Miss</option>
-                            <option>Mrs</option>
-                            <option>Ms</option>
-                            <option>Mr</option>
-                        </select><br>
-                    </div>
-                    <div class="field-wrap">
-                        <label for="insightly_firstName">First Name</label><br>
-                        <input id="insightly_FirstName" type="text" name="FirstName">
-                    </div>
-                    <div class="field-wrap">
-                        <label for="insightly_middleName">Middle Name (Optional)</label><br>
-                        <input id="insightly_MiddleName" type="text" name="MiddleName">
-                    </div>
-                    <div class="field-wrap">
-                        <label for="insightly_lastName">Last Name</label><br>
-                        <input id="insightly_LastName" type="text" name="LastName">
-                    </div>
-
-                    <div class="wrap">
-                        <h4 class="intro bold">I need:</h4>
-                        <h5 class="bold">(Select all that apply, or <a href="#" data-toggle="modal" data-target="#myModal">learn more</a>)</h5>
-                        <input id="2a" type="checkbox" name="business-reg">Business Registration <br>
-                        <input id="2b" type="checkbox" name="company-reg">Company Registration <br>
-                        <input id="2c" type="checkbox" name="tcc">TCC (Tax Compliance Certificate) <br>
-                        <input id="2d" type="checkbox" name="nccr">NCC (National Contracts Commission Registration) <br>
-                        <input id="2e" type="checkbox" name="trademarking">Trademarking <br>
-                        <div class="wrap">
-                            <input id="2f" type="checkbox" name="business-reg">I want help with something else: <br>
-                            <textarea id="other" name="other" type="text" placeholder="Message"></textarea>
+                        <div class="field-wrap">
+                            <h4 class="intro bold">Hi StartupRobot, I am:</h4>
+                            <label>Title</label><br>
+                            <select id="title">
+                                <option>Miss</option>
+                                <option>Mrs</option>
+                                <option>Ms</option>
+                                <option>Mr</option>
+                            </select><br>
                         </div>
-                    </div>
+                        <div class="field-wrap">
+                            <label for="insightly_firstName">First Name</label><br>
+                            <input id="insightly_FirstName" type="text" name="FirstName">
+                        </div>
+                        <div class="field-wrap">
+                            <label for="insightly_middleName">Middle Name (Optional)</label><br>
+                            <input id="insightly_MiddleName" type="text" name="MiddleName">
+                        </div>
+                        <div class="field-wrap">
+                            <label for="insightly_lastName">Last Name</label><br>
+                            <input id="insightly_LastName" type="text" name="LastName">
+                        </div>
 
-                    <div class="field-wrap">
-                        <h4 class="intro bold">You can reach me at:</h4>
-                        <label for="phone">Phone Number</label><br>
-                        <input id="insightly_Phone" type="text" name="phonenum">
-                    </div>
-                    <div class="field-wrap">
-                        <label for="email">Email Address</label><br>
-                        <input id="insightly_Email" type="email" name="email">
-                    </div>
+                        <div class="wrap">
+                            <div class="intro">
+                                <h4 class="bold">I need:</h4>
+                                <h5 class="bold">(Select all that apply, or <a href="#" data-toggle="modal" data-target="#myModal">learn more</a>)</h5>
+                            </div>
+                            <input id="2a" type="checkbox" class="checkbox-inline" name="business-reg">Business Registration <br>
+                            <input id="2b" type="checkbox" class="checkbox-inline" name="company-reg">Company Registration <br>
+                            <input id="2c" type="checkbox" class="checkbox-inline" name="tcc">TCC (Tax Compliance Certificate) <br>
+                            <input id="2d" type="checkbox" class="checkbox-inline" name="nccr">NCC (National Contracts Commission Registration) <br>
+                            <input id="2e" type="checkbox" class="checkbox-inline" name="trademarking">Trademarking <br>
+                            <div class="wrap">
+                                <input id="2f" type="checkbox" class="checkbox-inline" name="business-reg">I want help with something else: <br>
+                                <textarea id="other" name="other" type="text" placeholder="Message"></textarea>
+                            </div>
+                        </div>
 
-                    <input type="hidden" id="insightly_ResponsibleUser" name="ResponsibleUser" value="962072"/><br/>
+                        <div class="field-wrap">
+                            <h4 class="intro bold">You can reach me at:</h4>
+                            <label for="phone">Phone Number</label><br>
+                            <input id="insightly_Phone" type="text" name="phonenum">
+                        </div>
+                        <div class="field-wrap">
+                            <label for="email">Email Address</label><br>
+                            <input id="insightly_Email" type="email" name="email">
+                        </div>
 
-                    <div class="hidden">
-                        <label for="Description">Description: </label>
-                        <input id="insightly_Description" name="Description" type="text"/>
-                    </div>
+                        <input type="hidden" id="insightly_ResponsibleUser" name="ResponsibleUser" value="962072"/><br/>
 
-                    <input type="hidden" id="insightly_LeadSource" name="LeadSource" value="466760"/>
-                    <input class="btn btn-default2" id="submit" onclick="concat()" type="submit" value="Contact Me!">
-                </form>
+                        <div class="hidden">
+                            <label for="Description">Description: </label>
+                            <input id="insightly_Description" name="Description" type="text"/>
+                        </div>
+
+                        <input type="hidden" id="insightly_LeadSource" name="LeadSource" value="466760"/>
+                        <input class="btn btn-default2" id="submit" onclick="concat()" type="submit" value="Contact Me!">
+                    </form>
             </div>
         </div>
     </section>
