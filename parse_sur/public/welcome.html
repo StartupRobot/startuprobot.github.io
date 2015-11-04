@@ -63,15 +63,20 @@
         <!-- /.container-fluid -->
     </nav>
 
-
-    <!-- Section -->
-    <section id="section-form" class="form-section">
+    <aside class="intro-text">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h4>Tell us who you are, what you need, and how to contact you. Our robots will follow up with you to make sure all your compliance and filing needs are met with minimum fuss.</h4>
+                    <h3>Tell us who you are, what you need, and how to contact you. Our robots will follow up with you to make sure all your compliance and filing needs are met with minimum fuss.</h3>
                 </div>
             </div>
+        </div>
+    </aside>    
+
+    <!-- Section -->
+    <section id="section-form" class="form-section">
+        
+        <div class="container">
             <div class="row center-block">
                     <form name="insightly_web_to_lead" action="https://googleapps.insight.ly/WebToLead/Create" method="post" class="fs-form fs-form-full">
                     <input type="hidden" name="formId" value="ayoXdgRJElVfaWGwaPILXA=="/>
@@ -88,7 +93,7 @@
                         </div>
                         <div class="field-wrap">
                             <label for="insightly_firstName">First Name</label><br>
-                            <input id="insightly_FirstName" type="text" name="FirstName">
+                            <input id="insightly_FirstName" type="text" name="FirstName" required>
                         </div>
                         <div class="field-wrap">
                             <label for="insightly_middleName">Middle Name (Optional)</label><br>
@@ -96,7 +101,7 @@
                         </div>
                         <div class="field-wrap">
                             <label for="insightly_lastName">Last Name</label><br>
-                            <input id="insightly_LastName" type="text" name="LastName">
+                            <input id="insightly_LastName" type="text" name="LastName" required>
                         </div>
 
                         <div class="wrap">
@@ -104,13 +109,13 @@
                                 <h4 class="bold">I need:</h4>
                                 <h5 class="bold">(Select all that apply, or <a href="#" data-toggle="modal" data-target="#myModal">learn more</a>)</h5>
                             </div>
-                            <input id="2a" type="checkbox" class="checkbox-inline" name="business-reg">Business Registration <br>
-                            <input id="2b" type="checkbox" class="checkbox-inline" name="company-reg">Company Registration <br>
-                            <input id="2c" type="checkbox" class="checkbox-inline" name="tcc">TCC (Tax Compliance Certificate) <br>
-                            <input id="2d" type="checkbox" class="checkbox-inline" name="nccr">NCC (National Contracts Commission Registration) <br>
-                            <input id="2e" type="checkbox" class="checkbox-inline" name="trademarking">Trademarking <br>
+                            <input id="2a" type="checkbox" class="checkbox-inline" name="business-reg" value="Business-registration">Business Registration <br>
+                            <input id="2b" type="checkbox" class="checkbox-inline" name="company-reg" value="Company-registration">Company Registration <br>
+                            <input id="2c" type="checkbox" class="checkbox-inline" name="tcc" value="TCC">TCC (Tax Compliance Certificate) <br>
+                            <input id="2d" type="checkbox" class="checkbox-inline" name="nccr" value="NCC">NCC (National Contracts Commission Registration) <br>
+                            <input id="2e" type="checkbox" class="checkbox-inline" name="trademarking" value="Trademarking">Trademarking <br>
                             <div class="wrap">
-                                <input id="2f" type="checkbox" class="checkbox-inline" name="business-reg">I want help with something else: <br>
+                                <input id="2f" type="checkbox" class="checkbox-inline" name="other" value="other">I want help with something else: <br>
                                 <textarea id="other" name="other" type="text" placeholder="Message"></textarea>
                             </div>
                         </div>
@@ -118,11 +123,11 @@
                         <div class="field-wrap">
                             <h4 class="intro bold">You can reach me at:</h4>
                             <label for="phone">Phone Number</label><br>
-                            <input id="insightly_Phone" type="text" name="phonenum">
+                            <input id="insightly_Phone" type="text" name="phone" required>
                         </div>
                         <div class="field-wrap">
                             <label for="email">Email Address</label><br>
-                            <input id="insightly_Email" type="email" name="email">
+                            <input id="insightly_Email" type="email" name="email" required>
                         </div>
 
                         <input type="hidden" id="insightly_ResponsibleUser" name="ResponsibleUser" value="962072"/><br/>
@@ -285,7 +290,6 @@
                     // ... increase counter and concatenate checkbox value to the url string
                     counter++;
                     url = url + ' I need assistance with my: ' + input_obj[i].value;
-                    // document.getElementById("insightly_Description").value = url;
                 }
             }
 

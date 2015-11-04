@@ -51,6 +51,12 @@ body {
 	margin: 20px 0;
 }
 
+.intro-text {
+	background-color: #eeeeee;
+	padding-top: 145px;
+	padding-bottom: 50px;
+}
+
 .bold {
 	font-weight: bold;
 }
@@ -243,7 +249,7 @@ h3,h4 {
 	/*margin-top: 10px;*/
 	padding-bottom: 5px;
 	width: 50%;
-	background: rgba(199, 199, 199, 0.06);
+	background: rgba(199, 199, 199, 0.2);
 }
 
 .form-control {
@@ -296,7 +302,7 @@ h3,h4 {
 
 .form-section {
 	min-height: 100%;
-    padding-top: 140px;
+    padding-top: 30px;
     padding-bottom: 50px;
     background: url(../img/robot-tilt.png);
     background-repeat: no-repeat;
