@@ -1,9 +1,9 @@
 {
   "applications": {
     "_default": {
-      "link": "startuprobot"
+      "link": "startuprobotdev"
     },
-    "startuprobot": {
+    "startuprobotdev": {
       "applicationId": "3QKuMXbfo5fm1Tq4dOVs3idYN9Jk9krPJBwGKhfo"
     }
   }
