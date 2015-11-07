@@ -9,6 +9,10 @@ body {
 	font-family: 'raleway', Arial, sans-serif;
 }
 
+.navbar {
+	padding: 20px 0;
+}
+
 .navbar-default {
 	background-color: #98B8C4;
 	border-color: transparent;
@@ -54,7 +58,7 @@ body {
 .intro-text {
 	background-color: #eeeeee;
 	padding-top: 145px;
-	padding-bottom: 50px;
+	padding-bottom: 28px;
 }
 
 .bold {
@@ -76,10 +80,15 @@ h3,h4 {
 /********************************** Footer ******************************************/
 
 .footer {
-	text-align: center;
+	text-align: left;
 	width: 100%;
-	background-color: #e1e1e1;
-	/*padding: 10px;*/
+	background-color: #f3f3f3;
+	padding: 10px;
+}
+
+.footer-heading {
+	font-weight: bold;
+	color: #008db1;
 }
 
 .footer-text {
@@ -134,6 +143,14 @@ h3,h4 {
 
 .main {
 	padding-top: 30px;
+}
+
+.contact-list {
+	padding-left: 0;
+}
+
+.contact-list li {
+	list-style-type: none;
 }
 
 .value-prop {
@@ -229,6 +246,10 @@ h3,h4 {
 	margin-left: 45px;
 }
 
+.padding {
+	padding-top: 40px;	
+}
+
 .glyphicon {
 	margin-left: -90px;
 }
@@ -248,7 +269,7 @@ h3,h4 {
 	margin-bottom: 10px;
 	/*margin-top: 10px;*/
 	padding-bottom: 5px;
-	width: 50%;
+	width: 45%;
 	background: rgba(199, 199, 199, 0.2);
 }
 
@@ -262,6 +283,10 @@ h3,h4 {
 .form-control:focus {
 	outline: none;
 	box-shadow: none;
+}
+
+#insightly_Phone {
+	width: 25%;
 }
 
 .field-wrap input:focus {
@@ -302,7 +327,7 @@ h3,h4 {
 
 .form-section {
 	min-height: 100%;
-    padding-top: 30px;
+    padding-top: 16px;
     padding-bottom: 50px;
     background: url(../img/robot-tilt.png);
     background-repeat: no-repeat;
@@ -398,7 +423,7 @@ input[type=checkbox], input[type=radio] {
 }
 
 textarea {
-	width: 47%;
+	width: 43%;
 	height: 100px;
 	margin-left: 30px;
 }

@@ -48,13 +48,7 @@
                         <a href="services.html">Services</a>
                     </li>
                     <li>
-                        <a href="#">Help</a>
-                    </li>
-                    <li>
-                        <a id="signup-nav" href="signup.html">Sign Up</a>
-                    </li>
-                    <li>
-                        <a href="#">Login</a>
+                        <a href="http://forum.startuprobot.com">Forum</a>
                     </li>
                 </ul>
             </div>
@@ -67,7 +61,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h3>Tell us who you are, what you need, and how to contact you. Our robots will follow up with you to make sure all your compliance and filing needs are met with minimum fuss.</h3>
+                    <h3>Tell us who you are, what you need, and we'll contact you.</h3>
                 </div>
             </div>
         </div>
@@ -83,13 +77,6 @@
 
                         <div class="field-wrap">
                             <h4 class="intro bold">Hi StartupRobot, I am:</h4>
-                            <label>Title</label><br>
-                            <select id="title">
-                                <option>Miss</option>
-                                <option>Mrs</option>
-                                <option>Ms</option>
-                                <option>Mr</option>
-                            </select><br>
                         </div>
                         <div class="field-wrap">
                             <label for="insightly_firstName">First Name</label><br>
@@ -116,7 +103,7 @@
                             <input id="2e" type="checkbox" class="checkbox-inline" name="trademarking" value="Trademarking">Trademarking <a href="#" data-toggle="modal" data-target="#sku5">learn more</a><br>
                             <div class="wrap">
                                 <input id="2f" type="checkbox" class="checkbox-inline" name="other" value="other">I want help with something else: <br>
-                                <textarea id="other" name="other" type="text" placeholder="Message"></textarea>
+                                <textarea id="other" name="other" type="text" placeholder=""></textarea>
                             </div>
                         </div>
 
@@ -278,24 +265,24 @@
         <div class="footer">
             <div class="container">
                 <div class="row footer-space">
-                    <div class="col-lg-12 privacy">
-                        <h5>Resources</h5>
-                        <a href="">Privacy Policy</a>
+                    <div class="col-lg-12">
+                        <h5 class="footer-heading">Connect with Us</h5>
                     </div>
                 </div>
                 <div class="row footer-space">
-                    <div class="col-lg-12 social">
+                    <div class="col-lg-12">
                         <a href="https://www.facebook.com/startuprobot"><img src="img/fb.png"></a>
                         <a href="https://twitter.com/startuprobot"><img src="img/tweet.png"></a>
                         <a href="https://instagram.com/startuprobot/"><img src="img/insta.png"></a>
                         <a href="https://plus.google.com/+Startuprobot/videos"><img src="img/googleplus.png"></a>
                         <a href="https://www.youtube.com/c/Startuprobot"><img src="img/utube.png"></a>
+                        <p class="footer-text">...or <a href="contact.html">call</a> or <a href="contact.html">snail mail</a></p>
                     </div>
                 </div>
                 <div class="row footer-space">
                     <div class="col-lg-12">
                         <p class="footer-text">Copyright &copy; 2015 StartupRobot.</p>
-                        <p class="footer-text">StartUpRobot is not a replacement for a Lawyer or an Accountant. Please see the appropriate professional help for specific needs. Use of startuprobot.com is subject to our <a href="#">Terms and Conditions.</a></p>
+                        <p class="footer-text">StartUpRobot is not a replacement for a Lawyer or an Accountant. Please see the appropriate professional help for specific needs. Use of startuprobot.com is subject to our <a href="privacy_policy.html">Privacy Policy</a> and <a href="#">Terms and Conditions.</a></p>
                     </div>
                 </div>
             </div>
@@ -354,8 +341,8 @@
             }
 
             var str4 = document.getElementById("other").value;
-            var str5 = document.getElementById("title").value;
-            var str6 = "Title: ";
+            // var str5 = document.getElementById("title").value;
+            // var str6 = "Title: ";
 
             var res = str6.concat(str5, str1, str3, url, str2, str4);
             document.getElementById("insightly_Description").value = res;

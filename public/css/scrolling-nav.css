@@ -15,12 +15,12 @@ html {
 }
 
 @media(min-width:767px) {
-    .navbar {
+    /*.navbar {
         padding: 20px 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
+    }*/
 
     .top-nav-collapse {
         padding: 0;
@@ -34,6 +34,27 @@ of those sections to manage the look and feel of the site. */
 .general-section {
     min-height: 100%;
     padding-top: 100px;
+    padding-bottom: 30px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.privacy-section {
+    min-height: 100%;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.contact-section {
+    min-height: 100%;
+    padding-top: 100px;
+    padding-bottom: 30px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
