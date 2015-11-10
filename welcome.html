@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Welcome!</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-55672141-1');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+    </script>
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html"><img class="img-responsive" src="img/sur-logo-white.png" ></a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="http://forum.startuprobot.com">Forum</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <aside class="intro-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Tell us who you are, what you need, and we'll contact you.</h3>
+                </div>
+            </div>
+        </div>
+    </aside>    
+
+    <!-- Section -->
+    <section id="section-form" class="form-section">
+        
+        <div class="container">
+            <div class="row center-block">
+                    <form name="insightly_web_to_lead" action="https://googleapps.insight.ly/WebToLead/Create" method="post" class="fs-form fs-form-full">
+                    <input type="hidden" name="formId" value="ayoXdgRJElVfaWGwaPILXA=="/>
+
+                        <div class="field-wrap">
+                            <h4 class="intro bold">Hi StartupRobot, I am:</h4>
+                        </div>
+                        <div class="field-wrap">
+                            <label for="insightly_firstName">First Name</label><br>
+                            <input id="insightly_FirstName" type="text" name="FirstName" required>
+                        </div>
+                        <div class="field-wrap">
+                            <label for="insightly_middleName">Middle Name (Optional)</label><br>
+                            <input id="insightly_MiddleName" type="text" name="MiddleName">
+                        </div>
+                        <div class="field-wrap">
+                            <label for="insightly_lastName">Last Name</label><br>
+                            <input id="insightly_LastName" type="text" name="LastName" required>
+                        </div>
+
+                        <div class="wrap">
+                            <div class="intro">
+                                <h4 class="bold">I need:</h4>
+                                <h5 class="bold">(Select all that apply)</h5>
+                            </div>
+                            <input id="2a" type="checkbox" class="checkbox-inline" name="business-reg" value="Business-registration">Business Registration <a href="#" data-toggle="modal" data-target="#sku1">learn more</a><br>
+                            <input id="2b" type="checkbox" class="checkbox-inline" name="company-reg" value="Company-registration">Company Registration <a href="#" data-toggle="modal" data-target="#sku2">learn more</a><br>
+                            <input id="2c" type="checkbox" class="checkbox-inline" name="tcc" value="TCC">TCC (Tax Compliance Certificate) <a href="#" data-toggle="modal" data-target="#sku3">learn more</a><br>
+                            <input id="2d" type="checkbox" class="checkbox-inline" name="nccr" value="NCC">NCC (National Contracts Commission Registration) <a href="#" data-toggle="modal" data-target="#sku4">learn more</a><br>
+                            <input id="2e" type="checkbox" class="checkbox-inline" name="trademarking" value="Trademarking">Trademarking <a href="#" data-toggle="modal" data-target="#sku5">learn more</a><br>
+                            <div class="wrap">
+                                <input id="2f" type="checkbox" class="checkbox-inline" name="other" value="other">I want help with something else: <br>
+                                <textarea id="other" name="other" type="text" placeholder=""></textarea>
+                            </div>
+                        </div>
+
+                        <div class="field-wrap">
+                            <h4 class="intro bold">You can reach me at:</h4>
+                            <label for="phone">Phone Number</label><br>
+                            <input id="insightly_Phone" type="text" name="phone" required>
+                        </div>
+                        <div class="field-wrap">
+                            <label for="email">Email Address</label><br>
+                            <input id="insightly_Email" type="email" name="email" required>
+                        </div>
+
+                        <input type="hidden" id="insightly_ResponsibleUser" name="ResponsibleUser" value="962072"/><br/>
+
+                        <div class="hidden">
+                            <label for="Description">Description: </label>
+                            <input id="insightly_Description" name="Description" type="text"/>
+                        </div>
+
+                        <input type="hidden" id="insightly_LeadSource" name="LeadSource" value="466760"/>
+                        <input class="btn btn-default2" id="submit" onclick="concat()" type="submit" value="Contact Me!">
+                    </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learn More Modals -->
+    <div class="modal fade" id="sku1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 class="modal-title" id="myModalLabel">Our Services</h2>
+          </div>
+          <div class="modal-body">
+            <h3>Business Registration</h3> 
+            <h4><strong>From J$7,500</strong></h4>
+            <p>If you’re looking to start a business or formalise an existing business, business registration allows you to:</p>
+            <ul>
+                <li>Operate legally under a name other than your personal name.</li>
+                <li>Advertise legally. </li>
+                <li>Access business banking and funding.</li>
+                <li>Be exempted from the 3% withholding tax requirement. </li>
+            </ul> 
+            <p>Registering a business has different benefits from registering a company. You can convert a business into a company, but you can’t convert a company into a business. Seek legal advice to help you decide which is right for you.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default2" data-dismiss="modal">Back to Form</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="sku2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 class="modal-title" id="myModalLabel">Our Services</h2>
+          </div>
+          <div class="modal-body">
+            <h3>Company Registration</h3> 
+            <h4><strong>From J$48,000</strong></h4>
+            <p>In order to start a company, you must register it. Registering a company gives you the most of the same benefits as registering a business, but it also allows you to:</p>
+            <ul>
+                <li>Raise funds by selling company shares to investors.</li>
+                <li>Protect your personal assets from being seized to pay company debts.</li>
+            </ul>
+            <p>That being said, there are some benefits of registering a business that don’t apply to companies. You can convert a business into a company, but you can’t convert a company into a business. Seek legal advice to help you decide which is right for you.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default2" data-dismiss="modal">Back to Form</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="sku3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 class="modal-title" id="myModalLabel">Our Services</h2>
+          </div>
+          <div class="modal-body">
+            <h3>Tax Compliance Certificate (TCC)</h3> 
+            <h4><strong>From J$4,500 <br> (plus J$3,500 for each SO2 filed)</strong></h4>
+            <p>A TCC shows that your business/ company is up to date with all of its tax payments. A TCC allows you to:</p>
+            <ul>
+                <li>Apply for certain industry licences/registrations.</li>
+                <li>Apply for citizenship or work permits.</li>
+                <li>Apply for government contracts.</li>
+                <li>Apply to clear certain goods through Customs.</li>
+            </ul> 
+            <p>TCCs are valid for 3 months, or up to 6 months if your business/company is a PAYE Contributor.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default2" data-dismiss="modal">Back to Form</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="sku4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 class="modal-title" id="myModalLabel">Our Services</h2>
+          </div>
+          <div class="modal-body">
+            <h3>National Contracts Commission Registration (NCC)</h3> 
+            <h4><strong>From J$6,000</strong></h4>
+            <p>Registering with the National Contracts Commission allows your business/ company to apply for government contracts worth $500,000 or more. </p>
+            <p>To apply for an NCC, you’ll need:</p>
+            <ol>
+                <li>A TCC.</li>
+                <li>A Letter of Good Standing from the Companies Office. </li>
+                <li>A profile of your company.</li>
+                <li>Qualifications of your project team.</li>
+                <li>3 letters of recommendation.</li>
+            </ol> 
+            <p>NCCs are valid for 18 months.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default2" data-dismiss="modal">Back to Form</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="sku5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 class="modal-title" id="myModalLabel">Our Services</h2>
+          </div>
+          <div class="modal-body">
+            <h3>Trademarking</h3> 
+            <h4><strong>From J$26,000</strong></h4>
+            <p>A trademark protects a distinctive visual representation of your brand. Trademarking allows you to:</p>
+            <ul>
+                <li>Protect your brand’s reputation by preventing others from using your trademark. </li>
+                <li>Treat your trademark like an asset.</li>
+                <li>Licence the use of your trademark to others.</li>
+            </ul> 
+            <p>It can take as long as 10 months to get a trademark, so it’s better to start the process sooner rather than later.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default2" data-dismiss="modal">Back to Form</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row footer-space">
+                    <div class="col-lg-12">
+                        <h5 class="footer-heading">Connect with Us</h5>
+                    </div>
+                </div>
+                <div class="row footer-space">
+                    <div class="col-lg-12">
+                        <a href="https://www.facebook.com/startuprobot"><img src="img/fb.png"></a>
+                        <a href="https://twitter.com/startuprobot"><img src="img/tweet.png"></a>
+                        <a href="https://instagram.com/startuprobot/"><img src="img/insta.png"></a>
+                        <a href="https://plus.google.com/+Startuprobot/videos"><img src="img/googleplus.png"></a>
+                        <a href="https://www.youtube.com/c/Startuprobot"><img src="img/utube.png"></a>
+                        <p class="footer-text call">...or <a href="contact.html">call</a> or <a href="contact.html">snail mail</a></p>
+                    </div>
+                </div>
+                <div class="row footer-space">
+                    <div class="col-lg-12">
+                        <p class="footer-text">Copyright &copy; 2015 StartupRobot.</p>
+                        <p class="footer-text">StartUpRobot is not a replacement for a Lawyer or an Accountant. Please see the appropriate professional help for specific needs. Use of startuprobot.com is subject to our <a href="privacy_policy.html">Privacy Policy</a> and <a href="terms_and_conditions.html">Terms and Conditions.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/bootstrap-select.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+    <script>
+        $('.selectpicker').selectpicker(); 
+    </script>
+
+    <script>
+        $(document).ready(function(){
+          $('#other').keyup(function(){
+              
+              if($('#other').val().length>0)
+              {
+                  $('input#2f').prop('checked', true);
+              }
+              else
+              {
+                  $('input#2f').prop('checked', false);
+              }
+          });
+      })
+    </script>
+
+    <script>
+        function concat() {
+            var str1 = " Middle Name: ";
+            var str2 = " ";
+            var str3 = document.getElementById("insightly_MiddleName").value;
+            var counter = 0,    // counter for checked checkboxes
+                i = 0,          // loop variable
+                url = '',       // final url string
+                // get a collection of objects with the specified 'input' TAGNAME
+                input_obj = document.getElementsByTagName('input');
+            // loop through all collected objects
+            for (i = 0; i < input_obj.length; i++) {
+                // if input object is checkbox and checkbox is checked then ...
+                if (input_obj[i].type === 'checkbox' && input_obj[i].checked === true) {
+                    // ... increase counter and concatenate checkbox value to the url string
+                    counter++;
+                    url = url + ' I need assistance with my: ' + input_obj[i].value;
+                }
+            }
+
+            var str4 = document.getElementById("other").value;
+            // var str5 = document.getElementById("title").value;
+            // var str6 = "Title: ";
+
+            var res = str6.concat(str5, str1, str3, url, str2, str4);
+            document.getElementById("insightly_Description").value = res;
+        }
+    </script>
+
+</body>
+
+</html>
