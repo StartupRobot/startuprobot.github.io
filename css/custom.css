@@ -48,7 +48,14 @@ body {
 
 .right {
 	text-align: right;
-	padding-top: 10%;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+h3,h4 {
+	line-height: 1.5;
 }
 
 .intro {
@@ -59,14 +66,6 @@ body {
 	background-color: #eeeeee;
 	padding-top: 145px;
 	padding-bottom: 28px;
-}
-
-.bold {
-	font-weight: bold;
-}
-
-h3,h4 {
-	line-height: 1.5;
 }
 
 .modal-dialog {
