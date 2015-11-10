@@ -333,9 +333,11 @@
 
     <script>
         function concat() {
-            var str1 = " Middle Name: ";
+            var str1 = " My name is: ";
             var str2 = " ";
             var str3 = document.getElementById("insightly_MiddleName").value;
+            var str5 = document.getElementById("insightly_FirstName").value;
+            var str6 = document.getElementById("insightly_LastName").value;
             var counter = 0,    // counter for checked checkboxes
                 i = 0,          // loop variable
                 url = '',       // final url string
@@ -347,7 +349,7 @@
                 if (input_obj[i].type === 'checkbox' && input_obj[i].checked === true) {
                     // ... increase counter and concatenate checkbox value to the url string
                     counter++;
-                    url = url + ' I need assistance with my: ' + input_obj[i].value;
+                    url = url + ' and I need assistance with my: ' + input_obj[i].value;
                 }
             }
 
@@ -355,7 +357,7 @@
             // var str5 = document.getElementById("title").value;
             // var str6 = "Title: ";
 
-            var res = str6.concat(str5, str1, str3, url, str2, str4);
+            var res = str1.concat(str5, str3, str2, str6, url, str2, str4);
             document.getElementById("insightly_Description").value = res;
         }
     </script>
