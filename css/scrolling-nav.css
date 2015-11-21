@@ -68,9 +68,9 @@ of those sections to manage the look and feel of the site. */
     padding-bottom: 80px;
     background: url(../img/confused-robot.svg);
     background-repeat: no-repeat;
-    /*background-size: 30%;*/
-    /*background-attachment: fixed;*/
-    /*background-position: right bottom;*/
+    background-size: 30%;
+    background-attachment: fixed;
+    background-position: right bottom;
 }
 
 .contact-section {
