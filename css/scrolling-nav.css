@@ -62,7 +62,7 @@ of those sections to manage the look and feel of the site. */
     background-position: right bottom;
 }
 
-.404-section {
+.error-section {
     min-height: 100%;
     padding-top: 16px;
     padding-bottom: 80px;
