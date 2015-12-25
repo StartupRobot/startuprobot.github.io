@@ -58,6 +58,10 @@ h3,h4 {
 	line-height: 1.5;
 }
 
+.us-price {
+  color: #008db1;
+
+}
 .intro {
 	margin: 20px 0;
 }
