@@ -242,19 +242,25 @@ h3,h4 {
 	max-width: 450px;
 	background-color: #ffffff;
 	text-align: center;
-	margin-top: 180px;
+	margin-top: 125px;
+	margin-bottom: 25px;
 	-webkit-box-shadow: 0px 0px 15px 0px rgba(36,36,36,1);
 	-moz-box-shadow: 0px 0px 15px 0px rgba(36,36,36,1);
 	box-shadow: 0px 0px 15px 0px rgba(36,36,36,1);
 }
 
 #email {
-	width: 75%;
-	margin-left: 20px;
+	width: 80%;
 }
 
 .pword {
-	margin-left: 45px;
+	margin-left: 23px;
+	width: 85%;
+}
+
+#password {
+	margin-left: 23px;
+	width: 85%;
 }
 
 .padding {
