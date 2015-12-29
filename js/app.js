@@ -1,4 +1,7 @@
-// module
+/**
+ * Testing pushing to git hub
+ * @return {[type]} [description]
+ */
 (function(){
 	var app = angular.module('startuprobot', [ ]);
 
