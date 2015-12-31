@@ -8,7 +8,7 @@
         .module('app.shared_services',[])
         .factory('submitService', submitService);
 
-    submitService.$inject = ['_', '$http'];
+    submitService.$inject = ['_', '$http', '$location'];
     /**
      * Services to allow submission of data to an API
      *
@@ -16,7 +16,7 @@
      * @param $http - Core Angular service facilitating server communication
      * @returns {{submitForm: submitForm, transform: transform}}
      */
-    function submitService(_, $http){
+    function submitService(_, $http, $location){
         var service = {
             submitForm: submitForm,
             transform: transform
@@ -28,13 +28,18 @@
          */
         function submitForm(data){
             var prospect = transform(data),
-                url = 'https://googleapps.insight.ly/WebToLead/Create';
-            return $http.post(url, prospect)
+                api_key = 'Basic 7950a81a-03eb-4373-91cc-05e1dc1aa0d5',
+                url = 'https://api.insight.ly/v2.2/';
+            return $http.post(url, prospect, {headers: {'Authorization': api_key}})
                 .then(postComplete)
-                .catch();
+                .catch(postError);
 
             function postComplete(response){
-                console.log('Completed');
+                $location.path('/complete');
+            }
+
+            function postError(response){
+                console.log(response);
             }
         }
         /***
@@ -47,14 +52,14 @@
               space = ' ',
               name = data.name.split(space),
               services = getRequestedServices(data);
-            transformedData.formId = 'ayoXdgRJElVfaWGwaPILXA==';
-            transformedData.FirstName = name[0] || 'Not Given';
-            transformedData.LastName = name[1] || 'Not Given';
-            transformedData.email = data.email;
-            transformedData.phone = data.phone;
-            transformedData.LeadSource = 466760;
-            transformedData.ResponsibleUser = 962072;
-            transformedData.Description = "Custom Request:" + data.custom + " Services:" + services.toString();
+            //transformedData.formId = 'ayoXdgRJElVfaWGwaPILXA==';
+            transformedData.FIRST_NAME = name[0] || 'Not Given';
+            transformedData.LAST_NAME = name[1] || 'Not Given';
+            transformedData.EMAIL = data.email;
+            transformedData.PHONE = data.phone;
+            //transformedData.LeadSource = 466760;
+            //transformedData.ResponsibleUser = 962072;
+            transformedData.LEAD_DESCRIPTION = "Custom Request:" + data.custom + " Services:" + services.toString();
             return transformedData;
         }
         /**
