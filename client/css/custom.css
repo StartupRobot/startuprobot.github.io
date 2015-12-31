@@ -404,7 +404,7 @@ h3,h4 {
 	display: none;
 }
 
-.checkboxx input[type=checkbox] {
+.checkbox input[type=checkbox] {
 	transform: scale(1.5);
 }
 
@@ -428,7 +428,7 @@ h3,h4 {
 	display: none;
 }
 
-.checkboxx-inline input[type=checkbox] {
+.checkbox-inline input[type=checkbox] {
 	transform: scale(1.5);
 }
 
