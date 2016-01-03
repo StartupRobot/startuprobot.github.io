@@ -5,12 +5,17 @@
     angular
         .module('app.home')
         .controller('Home', Home);
+  
+  Home.$inject = ['scrollService'];
     /**
      *
      * @constructor
      */
-    function Home(){
+    function Home(scrollService){
         var vm = this;
-        vm.section = "intro-section";
+
+        vm.goTo = function(location){
+            scrollService.scrollTo(location);
+        }
     }
 })();

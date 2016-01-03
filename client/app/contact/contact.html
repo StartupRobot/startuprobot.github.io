@@ -1,28 +1,125 @@
-<section id="" class="contact-section">
+<aside class="intro-text">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6">
-				<h2>Contact</h2>
+			<div class="col-md-8">
+				<h3>Tell us who you are, what you need, and we'll contact you.</h3>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<h3>Mailing Address</h3>
-				<ul class="contact-list">
-					<li>℅ Start-Up Jamaica</li>
-					<li>7<sup>th</sup> Floor</li>
-					<li>JN Building</li>
-					<li>32 ½ Duke Street</li>
-					<li>Kingston</li>
-					<li>Jamaica</li>
-				</ul>
-				<h3>Telephone</h3>
-				<ul class="contact-list">
-					<li>(876) 948-7011</li>
-					<li>(876) 948-7013</li>
-					<li>(876) 948-7200</li>
-				</ul>
-			</div>
+	</div>
+</aside>
+
+<section id="section-form" class="form-section">
+
+	<div class="container">
+		<div class="row center-block">
+			<form name="insightly_web_to_lead" class="fs-form fs-form-full" novalidate ng-submit="vm.submit()">
+				<div class="field-wrap">
+					<h4 class="intro bold">Hi StartupRobot, I am:</h4>
+				</div>
+
+				<div class="field-wrap form-group"
+				     ng-class="{ 'has-error': insightly_web_to_lead.name.$touched
+				     && insightly_web_to_lead.name.$invalid, 'has-success': insightly_web_to_lead.name.$touched && insightly_web_to_lead.name.$valid}">
+					<label>Full Name</label><br>
+					<input id="insightly_FirstName"
+					       type="text"
+					       name="name"
+					       required
+					       placeholder="Mary Brown"
+					       ng-model="vm.client.name"
+							maxlength="60"
+							minlength="3">
+					<div class="help-block"
+					     ng-messages="insightly_web_to_lead.name.$error"
+					     ng-show="insightly_web_to_lead.name.$touched">
+						<div ng-messages-include="../app/partials/messages.html"></div>
+					</div>
+				</div>
+
+				<div class="field-wrap form-group"
+				     ng-class="{ 'has-error': insightly_web_to_lead.phone.$touched
+				     && insightly_web_to_lead.phone.$invalid, 'has-success': insightly_web_to_lead.phone.$touched && insightly_web_to_lead.phone.$valid}">
+					<h4 class="intro bold">You can reach me at:</h4>
+					<label>Phone Number</label><br>
+					<input id="insightly_Phone"
+					       type="text" name="phone"
+					       required
+					       placeholder="18764444444"
+							minlength="11"
+							maxlength="11"
+							ng-model="vm.client.phone">
+					<div class="help-block"
+					     ng-messages="insightly_web_to_lead.phone.$error"
+					     ng-show="insightly_web_to_lead.phone.$touched">
+						<div ng-messages-include="../app/partials/messages.html"></div>
+					</div>
+				</div>
+				<div class="field-wrap form-group"  ng-class="{ 'has-error': insightly_web_to_lead.email.$touched
+				     && insightly_web_to_lead.email.$invalid, 'has-success': insightly_web_to_lead.email.$touched && insightly_web_to_lead.email.$valid}">
+					<label>Email Address</label><br>
+					<input id="insightly_Email"
+					       type="email"
+					       name="email"
+					       required
+					       placeholder="mary.brown@gmail.com"
+					       ng-model="vm.client.email">
+					<div class="help-block"
+					     ng-messages="insightly_web_to_lead.email.$error"
+					     ng-show="insightly_web_to_lead.email.$touched">
+						<div ng-messages-include="../app/partials/messages.html"></div>
+					</div>
+				</div>
+
+				<div class="wrap">
+					<div class="intro">
+						<h4 class="bold">Can you help me with:</h4>
+						<h5 class="bold">(Select all that apply)</h5>
+					</div>
+
+					<input id="2a"
+					       type="checkbox"
+					       class="checkbox-inline"
+					       name="service" value="Business-registration"
+					       ng-model="vm.client.business">
+					Business Registration <a href="#" data-toggle="modal" data-target="#sku1">learn more</a><br>
+
+					<input id="2b"
+					       type="checkbox"
+					       class="checkbox-inline"
+					       name="service" value="Company-registration"
+					       ng-model="vm.client.company">Company Registration <a href="#" data-toggle="modal" data-target="#sku2">learn more</a><br>
+
+					<input id="2c"
+					       type="checkbox"
+					       class="checkbox-inline"
+					       name="service" value="TCC"
+					       ng-model="vm.client.tcc">TCC (Tax Compliance Certificate) <a href="#" data-toggle="modal" data-target="#sku3">learn more</a><br>
+
+					<input id="2d"
+					       type="checkbox"
+					       class="checkbox-inline"
+					       name="service" value="NCC"
+					       ng-model="vm.client.ncc">NCC (National Contracts Commission Registration) <a href="#" data-toggle="modal" data-target="#sku4">learn more</a><br>
+
+					<input id="2e"
+					       type="checkbox"
+					       class="checkbox-inline"
+					       name="service" value="Trademarking"
+					       ng-model="vm.client.trademarking">Trademarking <a href="#" data-toggle="modal" data-target="#sku5">learn more</a><br>
+
+					<input id="2f"
+					       type="checkbox"
+					       class="checkbox-inline"
+					       name="service" value="other"
+					       ng-model="vm.client.other">I want help with something else: <br>
+
+					<div class="wrap">
+						<textarea id="other" name="other" placeholder="Consulting, Legal Advice" ng-model="vm.client.custom"></textarea>
+					</div>
+				</div>
+
+				<input class="btn btn-default2" value="Contact Me!" type="submit" ng-disabled="insightly_web_to_lead.$invalid">
+			</form>
 		</div>
 	</div>
 </section>

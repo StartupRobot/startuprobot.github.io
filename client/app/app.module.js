@@ -9,20 +9,36 @@
 		.module('startup-robot',[
 			'app.home',
 			'app.about',
-			'app.filing',
+			'app.contact',
 			'app.services',
 			'app.success',
 			'app.shared_services',
 			'underscore'
-		]).run(run);
+		]).run(run)
+		.config(config);
 	/**
 	 * Google Analytics integration.
 	 * @param $rootScope
 	 * @param $window
 	 */
 	function run($rootScope, $window) {
-		$rootScope.$on("$locationChangeStart", function (event, nextUrl) {
-			$window.ga && $window.ga('send', 'pageview', {'page': nextUrl});
+		$rootScope.$on("$routeChangeSuccess", function (event, current) {
+			$window.ga && $window.ga('send', 'pageview', {'page': current});
+			$rootScope.pageTitle = current.title;
 		});
+	}
+	/**
+	 * Application wide route configuration
+	 * @param  {[type]} $routeProvider 
+	 * @return {[type]}               
+	 */
+	function config($routeProvider){
+		$routeProvider
+			.when('/error', {
+				templateUrl: 'app/404/404.html',
+				controller: 'Home',
+				controllerAs: 'vm',
+				title: '404'
+			}).otherwise({redirectTo: '/'});
 	}
 })();

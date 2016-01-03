@@ -14,10 +14,24 @@
      * @param $routeProvider - Used for configuring routes.
      */
     function config($routeProvider){
-        $routeProvider.when('/', {
+        $routeProvider
+        .when('/', {
             templateUrl: 'app/home/home.html',
             controller: 'Home',
-            controllerAs: 'vm'
+            controllerAs: 'vm',
+            title: 'Home'
+        })
+        .when('/privacy-policy', {
+            templateUrl: 'app/partials/privacy_policy.html',
+            controller: 'Home',
+            controllerAs: 'vm',
+            title: 'Privacy Policy'
+        })
+         .when('/terms-and-conditions', {
+            templateUrl: 'app/partials/terms.html',
+            controller: 'Home',
+            controllerAs: 'vm',
+            title: 'Terms and Conditions'
         });
     }
 })();

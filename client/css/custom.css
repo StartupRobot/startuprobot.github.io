@@ -139,6 +139,10 @@ h3,h4 {
     margin-top: 30px;
 }
 
+.error-section{
+	margin-top: 80px;
+}
+
 .cta-btn {
 	text-align: right;
 }
@@ -492,6 +496,17 @@ textarea {
 
 .thankyou {
 	color: #008db1;
+}
+
+/************************************Privacy Page **********************************/
+
+.privacy-info > p{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.privacy-info > h5{
+	margin-top: 30px;
 }
 
 /*********************************** media queries ********************************/

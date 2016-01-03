@@ -8,11 +8,14 @@
             .when('/complete',{
                 templateUrl: 'app/success/success.html',
                 controller:'Success',
-                controllerAs: 'vm'
+                controllerAs: 'vm',
+                title: 'Success'
+
             }).when('/proof', {
                 templateUrl: 'app/success/proof.html',
                 controller: 'Success',
-                controllerAs: 'vm'
+                controllerAs: 'vm',
+                title: 'Proof'
             });
     }
 })();

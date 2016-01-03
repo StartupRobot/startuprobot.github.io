@@ -17,7 +17,8 @@
         $routeProvider.when('/services', {
             templateUrl: 'app/services/services.html',
             controller: 'Services',
-            controllerAs: 'vm'
+            controllerAs: 'vm',
+            title: 'Services'
         });
     }
 })();

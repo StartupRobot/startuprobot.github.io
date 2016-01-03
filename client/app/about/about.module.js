@@ -17,7 +17,8 @@
         $routeProvider.when('/about', {
             templateUrl: 'app/about/about.html',
             controller: 'About',
-            controllerAs: 'vm'
+            controllerAs: 'vm',
+            title: 'About'
         });
     }
 })();

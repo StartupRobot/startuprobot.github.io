@@ -8,10 +8,10 @@
     <meta name="description" content="The easiest way to start a business in Jamaica.">
     <meta name="author" content="">
 
-    <title>Home</title>
+    <title ng-bind="'StartupRobot | ' + pageTitle"></title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-select.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -37,8 +37,8 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-include="'app/partials/nav.html'">
 
     </nav>
-
-    <div ng-view></div>
+    
+    <div class="ng-view" autoscroll></div>
 
 
 
@@ -46,10 +46,10 @@
     <div class="footer" ng-include="'app/partials/footer.html'"></div>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="components/jquery/dist/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script src="js/bootstrap-select.min.js"></script>
 
@@ -76,9 +76,9 @@
     <script src="app/about/about.module.js"></script>
     <script src="app/about/about.controller.js"></script>
     <!-- Services Request Page Module -->
-	<script src="app/filing/filing.module.js"></script>
-	<script src="app/filing/filing.controller.js"></script>
-    <script src="app/filing/filing.service.js"></script>
+	<script src="app/contact/contact.module.js"></script>
+	<script src="app/contact/contact.controller.js"></script>
+    <script src="app/contact/contact.service.js"></script>
     <!-- Services Page Module -->
     <script src="app/services/services.module.js"></script>
     <script src="app/services/services.controller.js"></script>
@@ -86,7 +86,8 @@
     <script src="app/success/success.module.js"></script>
     <script src="app/success/success.controller.js"></script>
     <!-- Shared Application Services -->
-	<script src="app/shared/submitservice.js"></script>
+	<script src="app/shared/submit.service.js"></script>
+    <script src="app/shared/anchorscroll.service.js"></script>
     <!-- External Helper Libraries -->
 	<script src="app/shared/underscore.service.js"></script>
 	<!-- End of Modules -->
