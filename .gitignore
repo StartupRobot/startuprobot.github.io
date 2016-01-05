@@ -3,4 +3,6 @@
 *.iml
 out
 gen
+karma.conf.js
+test/
 # Created by .ignore support plugin (hsz.mobi)
