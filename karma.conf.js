@@ -20,9 +20,9 @@ module.exports = function(config) {
       'client/components/angular-messages/angular-messages.js',
       'client/components/angular-mocks/angular-mocks.js',
       'client/app/app.module.js',
-      'client/app/**/*.module.js',
-      'client/app/**/*.controller.js',
-      'client/app/**/*.service.js',
+      'client/app/**/**/*.module.js',
+      'client/app/**/**/*.controller.js',
+      'client/app/**/**/*.service.js',
       'test/**/*.js'
     ],
 
